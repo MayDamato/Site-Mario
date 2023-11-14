@@ -33,8 +33,12 @@
     <img src="/assets/mario.png" alt="logo mario e luigi" class="mario-luigi">
 
     <form class="caixa-fale-conosco" action="https://formsubmit.co/maydamato@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucesso.html">
+        <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, obrigada pelo contato e logo responderemos!">
+
         <input placeholder="Seu Nome" type="text" name="nome">
-        <input placeholder="Seu Telefone" type="tel" name="telefone">
+        <input placeholder="Seu Telefone" type="number" name="telefone">
+        <input placeholder="Seu Email" type="email" name="email">
         <textarea placeholder="Digite seu problema aqui" name="info"></textarea>
         <button onclick="sumirFormulario()">Enviar formulário</button>
     </form>
