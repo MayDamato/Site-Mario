@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,10 +6,10 @@
 }
 
 body {
-   display: flex;
-   height: 100vh;
-   align-items: center;
-   justify-content: space-evenly;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .mario {
@@ -26,6 +26,7 @@ body {
 
 
 .caixa-video-mario {
+    display: flex;
     position: fixed;
     top: 0;
     z-index: -1;
@@ -52,7 +53,7 @@ video {
 p {
     color: white;
     margin-top: 10px;
-    font-size: 18px; 
+    font-size: 18px;
 }
 
 button {
@@ -94,16 +95,70 @@ textarea {
     border-radius: 3px;
     border: 1px solid gray;
     padding: 10px;
-    outline-color: chartreuse;    
+    outline-color: chartreuse;
 }
 
-.mascara-form{
+.mascara-form {
     visibility: hidden;
     height: 100vh;
     width: 100vw;
     position: fixed;
     top: 0;
     z-index: 3;
-    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%); 
-   
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+
+}
+.caixa-sucesso{
+    background-color: #6b5454;
+    
+}
+
+.voltar{
+    color: #fff;
+}
+
+@media screen and (max-width: 818px) {
+    .mario-luigi {
+        height: 250px;
+    }
+
+    .mario {
+        width: 250px;
+    }
+
+    .caixa-principal {
+        width: 250px;
+
+    }
+
+    body {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .caixa-fale-conosco {
+        background: #fff;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 10px;
+        gap: 20px;
+        position: fixed;
+        left: -350px;
+        transition: left 1s linear;
+        z-index: 4;
+    }
+
+    textarea {
+        height: 90px;
+        width: 255px;
+        border-radius: 3px;
+        border: 1px solid gray;
+        padding: 10px;
+        outline-color: chartreuse;
+    }
 }
