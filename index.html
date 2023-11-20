@@ -34,35 +34,44 @@
 
     <form class="caixa-fale-conosco" action="https://formsubmit.co/maydamato@gmail.com" method="POST">
         <input type="hidden" name="_next" value="https://site-mario-bos.netlify.app/">
-        <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, obrigada pelo contato e logo responderemos!">
-        
+        <input type="hidden" name="_autoresponse"
+            value="Recebemos sua mensagem, obrigada pelo contato e logo responderemos!">
         <input placeholder="Seu Nome" type="text" name="nome">
         <input placeholder="Seu Telefone" type="number" name="telefone">
         <input placeholder="Seu Email" type="email" name="email">
         <textarea placeholder="Digite seu problema aqui" name="info"></textarea>
-        <button onclick="sumirFormulario()">Enviar formulário</button>
+        <button onclick="sumirFormulario(), alerta()">Enviar formulário</button>
     </form>
 
     <div class="mascara-form"></div>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
 
     let formulario = document.querySelector(".caixa-fale-conosco")
     let mascara = document.querySelector(".mascara-form")
-   
+
 
     function cliqueiNoBotao() {
-       
+
         formulario.style.left = "50px"
         mascara.style.visibility = "visible"
     }
 
-    function sumirFormulario(){
+    function sumirFormulario() {
         formulario.style.left = "-350px"
         mascara.style.visibility = "hidden"
     }
-    
+
+    function alerta() {
+        Swal.fire({
+            title: "Olá, seja bem vinda(o)!",
+            text: "Sua mensagem será enviada após a autenticação!",
+            icon: "OK"
+        });
+    }
+
 
 
 </script>
