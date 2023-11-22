@@ -81,6 +81,11 @@ button {
     z-index: 4;
 }
 
+label {
+    display: inline-block;
+    height: 0px;
+}
+
 input {
     height: 40px;
     border-radius: 3px;
@@ -108,12 +113,12 @@ textarea {
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
 
 }
-.caixa-sucesso{
-    background-color: #6b5454;
-    
+
+.caixa-sucesso {
+    background-color: #aebff0;
 }
 
-.voltar{
+.voltar {
     color: #fff;
 }
 
