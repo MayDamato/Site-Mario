@@ -116,6 +116,15 @@ textarea {
 
 .caixa-sucesso {
     background-color: #aebff0;
+    font-size: 30px;
+    display: grid;
+    height: 200px;
+    width: 400px;
+    
+}
+
+.paragrafo-sucesso {
+    font-size: 30px;
 }
 
 .voltar {
