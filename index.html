@@ -34,7 +34,8 @@
 
     <form class="caixa-fale-conosco" action="https://formsubmit.co/maydamato@gmail.com" method="POST">
         <input type="hidden" name="_next" value="https://site-mario-bos.netlify.app/sucesso.html">
-        <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, obrigada pelo contato e logo responderemos!">
+        <input type="hidden" name="_autoresponse"
+            value="Recebemos sua mensagem, obrigada pelo contato e logo responderemos!">
         <label for="text">Nome</label>
         <input placeholder="Seu Nome" type="text" name="nome" required>
         <label for="text">Telefone</label>
@@ -42,44 +43,32 @@
         <label for="text">Email</label>
         <input placeholder="exemplo@xxx.com.br" type="email" name="email" required>
         <textarea placeholder="Digite seu problema aqui" name="info" required></textarea>
-        <button onclick="sumirFormulario(), alerta()">Enviar formulário</button>
+        <button>Enviar formulário</button>
     </form>
 
     <div class="mascara-form"></div>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
 <script>
+
 
     let formulario = document.querySelector(".caixa-fale-conosco")
     let mascara = document.querySelector(".mascara-form")
 
-
     $('#phone_with_ddd').mask('(00) 0000-00000');
+
 
     function cliqueiNoBotao() {
 
         formulario.style.left = "50px"
+        formulario.style.transdorm = "translatex(-50%)"
         mascara.style.visibility = "visible"
     }
-
-
-    function sumirFormulario() {
-        formulario.style.left = "-350px"
-        mascara.style.visibility = "hidden"
-    }
-
-    function alerta() {
-        Swal.fire({
-            title: "Olá, seja bem vinda(o)!",
-            text: "Sua mensagem será enviada após a autenticação!",
-            icon: "OK"
-        });
-    }
-
-
 
 </script>
 
