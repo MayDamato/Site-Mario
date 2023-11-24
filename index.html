@@ -36,12 +36,12 @@
         <input type="hidden" name="_next" value="https://site-mario-bos.netlify.app/sucesso.html">
         <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, obrigada pelo contato e logo responderemos!">
         <label for="text">Nome</label>
-        <input placeholder="Seu Nome" type="text" name="nome">
+        <input placeholder="Seu Nome" type="text" name="nome" required>
         <label for="text">Telefone</label>
-        <input id="phone_with_ddd" placeholder="Seu Telefone" type="text" name="telefone">
+        <input id="phone_with_ddd" placeholder="Seu Telefone" type="text" name="telefone" required>
         <label for="text">Email</label>
-        <input placeholder="exemplo@xxx.com.br" type="email" name="email">
-        <textarea placeholder="Digite seu problema aqui" name="info"></textarea>
+        <input placeholder="exemplo@xxx.com.br" type="email" name="email" required>
+        <textarea placeholder="Digite seu problema aqui" name="info" required></textarea>
         <button onclick="sumirFormulario(), alerta()">Enviar formulário</button>
     </form>
 
@@ -57,13 +57,14 @@
     let mascara = document.querySelector(".mascara-form")
 
 
+    $('#phone_with_ddd').mask('(00) 0000-00000');
+
     function cliqueiNoBotao() {
 
         formulario.style.left = "50px"
         mascara.style.visibility = "visible"
     }
 
-    $('#phone_with_ddd').mask('(00) 0000-00000');
 
     function sumirFormulario() {
         formulario.style.left = "-350px"
