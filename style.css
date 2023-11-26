@@ -142,6 +142,11 @@ textarea {
     background-position: center;
 }
 
+.botao-voltar:hover {
+    background-color: blue;
+    color: white;
+    transform: scale(1.2)
+}
 
 @media screen and (max-width: 818px) {
     .mario-luigi {
@@ -192,15 +197,31 @@ textarea {
     }
 
     .caixa-sucesso {
-        display: flex;
-        flex-direction: column;
-        padding-left: 10px;
-        margin-top: 90%;
-        margin-right: 100px;
-        height: 300px;
-        width: 280px;
-        font-size: 20px;
-        border: 3px solid red;
-        border-radius: 7px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120px;
+        background-color: #e9eaf0;
+    }
+
+    .paragrafo-sucesso {
+        font-size: 15px;
+    }
+
+    .voltar{
+        font-size: 14px;
+    }
+
+    .botao-voltar{
+        height: 30px;
+        width: 150px;
+        background: #c51111;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        position: relative;
+        margin-top: 0;
+        cursor: pointer;   
     }
 }
