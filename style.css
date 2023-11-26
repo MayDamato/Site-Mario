@@ -133,7 +133,7 @@ textarea {
 
 @media screen and (max-width: 818px) {
     .mario-luigi {
-        height: 250px;
+        height: 220px;
     }
 
     .mario {
@@ -141,8 +141,11 @@ textarea {
     }
 
     .caixa-principal {
-        width: 250px;
+        width: 350px;
+    }
 
+    .p {
+        font-size: 10px;
     }
 
     body {
