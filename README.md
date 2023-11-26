@@ -27,7 +27,9 @@
 <div display="flex">
    <img src="https://github.com/MayDamato/Site-Mario/blob/main/assets/site%20mario%20macBook.png" alt="site-na-tela-do-macbook" width="700" height="400">
    <img src="https://github.com/MayDamato/Site-Mario/blob/main/assets/site%20mario%20formulario%20no%20macBook.png" alt="formulario-na-tela-do-mecbook" width="700" height="400">
+   <img src="https://github.com/MayDamato/Site-Mario/blob/main/assets/pagina%20sucesso%20no%20MecBook.png" alt="formulario-na-tela-do-mecbook" width="700" height="400">
    <img src="https://github.com/MayDamato/Site-Mario/blob/main/assets/site%20mario%20celulares.png" alt="card-na-tela-do-celular" width="450" height="700">
    <img src="https://github.com/MayDamato/Site-Mario/blob/main/assets/site%20mario%20formulario%20no%20celular.png" alt="formulario-na-tela-do-celular" width="450" height="700">
+   
   
 </div>
