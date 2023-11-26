@@ -115,21 +115,33 @@ textarea {
 }
 
 .caixa-sucesso {
-    background-color: #aebff0;
+    background-color: #e9eaf0;
     font-size: 30px;
     display: grid;
-    height: 200px;
+    padding-left: 10px;
+    margin-top: 0px;
+    margin-right: 70%;
+    height: 240px;
     width: 400px;
-    
+    border-radius: 7px;
 }
 
 .paragrafo-sucesso {
     font-size: 30px;
+    color: #f17272;
 }
 
 .voltar {
     color: #fff;
 }
+
+.sucesso {
+    background-image: url("./assets/mario.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
 
 @media screen and (max-width: 818px) {
     .mario-luigi {
@@ -177,5 +189,16 @@ textarea {
         border: 1px solid gray;
         padding: 10px;
         outline-color: chartreuse;
+    }
+
+    .caixa-sucesso {
+        padding-left: 10px;
+        margin-top: 90%;
+        margin-right: 100px;
+        height: 300px;
+        width: 280px;
+        font-size: 20px;
+        border: 3px solid red;
+        border-radius: 7px;
     }
 }
