@@ -9,7 +9,7 @@
 <br>-Um alerta que aparece quando um dos campos não foi preenchido e também quando o e-mail não é válido.
 <br>- Assim que enviado, o usuário também recebe um e-mail de aviso dizendo que seu e-mail foi recebido e que logo a empresa retornará o contato.
 <br>- Após enviado o formulário, o usuário vai para uma página de Sucesso informando que seu e-mail foi enviado
-<br>- Adicionei o @media no meu codigo do CSS para deixar a tela responssiva.
+<br>- Adicionei o @media no meu codigo do CSS para deixar a tela responsiva.
 </p>
 <br>
 <h2>Tecnologias utilizadas:</h2>
